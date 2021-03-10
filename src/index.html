@@ -1,70 +1,203 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
-        <title>BlackMadre</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, iitial-scale=1.0">
+        
+        <title>Nature Emoi - Vente de plantes en ligne</title>
+        
     </head>
     <body>
-        
-        <div id="nav-top-right-open" class="nav-top-right">
-            <div class="nav-top-right-bg"></div>
-            <div class="nav-top-right-inner"></div>
-            <div class="nav-top-right-inner"></div>
-            <div class="nav-top-right-inner"></div>
+
+        <!-- Header -->
+		<header id="home">
+            <img id="home-bg" src="../assets/img/bg.jpg" alt="Image de fond" />
+			<div class="navbar">
+				<div class="navbar-logo">
+					<a href="#home">
+                        <img src="../assets/img/logo.png" alt="Logo du site" />
+                    </a>
+				</div>
+				<nav>
+					<ul class="navbar-nav">
+						<li class="navbar-item"><a class="navbar-link" href="#home">Accueil</a></li>
+						<li class="navbar-item"><a class="navbar-link" href="#bestSales">Nos meilleures ventes</a></li>
+						<li class="navbar-item"><a class="navbar-link" href="#plants">Nos plantes</a></li>
+					</ul>
+				</nav>
+			</div>
+            <h1 id="home-title">Nature Emoi, meilleur que le chocolat.</h1>
+            <a id="home-scroll" href="#services">Scroll <i class="fas fa-angle-down"></i></a>
+		</header>
+
+        <div id="container">
+
+            <!-- Section Nos services -->
+            <section id="services" class="services">
+                <div class="services-block">
+                    <i class="fas fa-store fa-3x services-icon"></i>
+                    <p class="services-text">Nos magasins à votre service</p>
+                </div>
+                <div class="services-block">
+                    <i class="fas fa-people-carry fa-3x services-icon"></i>
+                    <p class="services-text">Retrait en magasin sans contact</p>
+                </div>
+                <div class="services-block">
+                    <i class="fas fa-truck fa-3x services-icon"></i>
+                    <p class="services-text">Livraison à domicile sans contact</p>	
+                </div>
+            </section>
+
+            <!-- Section Nos meilleurs ventes -->
+            <section id="bestSales" class="section">
+                <div class="section-title">
+                    <h2>Nos meilleurs ventes</h2>
+                    <div class="section-separator"></div>
+                </div>
+                <div class="bestSales-container">
+                    <figure class="no-grid">
+                        <img src="../assets/img/nos_meilleures_ventes/1.jpg" alt="Plante" />
+                        <figcaption>
+                            <div class="figcaption-left">
+                                <h3>Plante</h3>
+                                <p>24,99€</p>
+                            </div>
+                            <div class="figcaption-right">
+                                <a class="button" href="#">En savoir plus</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="no-grid">
+                        <img src="../assets/img/nos_meilleures_ventes/2.jpg" alt="Plante" />
+                        <figcaption>
+                            <div>
+                                <h3>Plante</h3>
+                                <p>14,99€</p>
+                            </div>
+                            <div>
+                                <a class="button" href="#">En savoir plus</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="no-grid">
+                        <img src="../assets/img/nos_meilleures_ventes/3.jpg" alt="Plante" />
+                        <figcaption>
+                            <div>
+                                <h3>Plante</h3>
+                                <p>24,99€</p>
+                            </div>
+                            <div>
+                                <a class="button" href="#">En savoir plus</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="no-grid">
+                        <img src="../assets/img/nos_meilleures_ventes/4.jpg" alt="Plante" />
+                        <figcaption>
+                            <div>
+                                <h3>Plante</h3>
+                                <p>29,99€</p>
+                            </div>
+                            <div>
+                                <a class="button" href="#">En savoir plus</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Section Nos plantes -->
+            <section id="plants" class="section">
+                <div class="section-title">
+                    <h2>Nos plantes</h2>
+                    <div class="section-separator"></div>
+                </div>
+
+                <div class="plants-grid">
+                    <figure class="plants-grid-1">
+                        <img src="../assets/img/nos_plantes/1.jpg" alt="Plante" />
+                        <figcaption>
+                            <div>
+                                <h3>Plante</h3>
+                                <p>17,99€</p>
+                            </div>
+                            <div>
+                                <a class="button" href="#">En savoir plus</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="plants-grid-2">
+                        <img src="../assets/img/nos_plantes/2.jpg" alt="Plante" />
+                        <figcaption>
+                            <div>
+                                <h3>Plante</h3>
+                                <p>9,99€</p>
+                            </div>
+                            <div>
+                                <a class="button" href="#">En savoir plus</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="plants-grid-3">
+                        <img src="../assets/img/nos_plantes/3.jpg" alt="Plante" />
+                        <figcaption>
+                            <div>
+                                <h3>Plante</h3>
+                                <p>44,99€</p>
+                            </div>
+                            <div>
+                                <a class="button" href="#">En savoir plus</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="plants-grid-4">
+                        <img src="../assets/img/nos_plantes/4.jpg" alt="Plante" />
+                        <figcaption>
+                            <div>
+                                <h3>Plante</h3>
+                                <p>39,99€</p>
+                            </div>
+                            <div>
+                                <a class="button" href="#">En savoir plus</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="plants-grid-5">
+                        <img src="../assets/img/nos_plantes/5.jpg" alt="Plante" />
+                        <figcaption>
+                            <div>
+                                <h3>Plante</h3>
+                                <p>17,99€</p>
+                            </div>
+                            <div>
+                                <a class="button" href="#">En savoir plus</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="plants-grid-6">
+                        <img src="../assets/img/nos_plantes/6.jpg" alt="Plante" />
+                        <figcaption>
+                            <div>
+                                <h3>Plante</h3>
+                                <p>24,99€</p>
+                            </div>
+                            <div>
+                                <a class="button" href="#">En savoir plus</a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <p>© 2020 - Nature Emoi</p>
+                <a href="#">Conditions générales de vente</a>
+            </footer>
+            
         </div>
 
-        <div id="menu">
-            <div id="menu-bg"></div>
-            <div id="menu-inner">
-                <div id="menu-inner-left">
-                    <div class="menu-inner-left-img" data-id="1" style="background-image: url('../assets/img/48.webp'); opacity: 1; z-index: 3;"></div>
-                    <div class="menu-inner-left-img" data-id="2" style="background-image: url('../assets/img/47.webp');"></div>
-                    <div class="menu-inner-left-img" data-id="3" style="background-image: url('../assets/img/44.webp');"></div>
-                    <div class="menu-inner-left-img" data-id="4" style="background-image: url('../assets/img/19.webp');"></div>
-                    <div class="menu-inner-left-img" data-id="5" style="background-image: url('../assets/img/22.webp');"></div>
-                </div>
-                <div id="menu-inner-right">
-                    <div id="menu-inner-right-header">5 Projets</div>
-                    <div id="menu-inner-right-container">
-                        <a href="#" data-id="1">
-                            <div class="menu-inner-right">
-                                <p>Tanqueray</p>
-                                <p>Lollapalooza</p>
-                            </div>
-                        </a>
-                        <a href="#" data-id="2">
-                            <div class="menu-inner-right">
-                                <p>Tramontina</p>
-                                <p>Respect For Your Barbecue</p>
-                            </div>
-                        </a>
-                        <a href="#" data-id="3">
-                            <div class="menu-inner-right">
-                                <p>Scaredy Cat</p>
-                                <p>Movie Posters</p>
-                            </div>
-                        </a>
-                        <a href="#" data-id="4">
-                            <div class="menu-inner-right">
-                                <p>Nike</p>
-                                <p>O Team Brasileiro</p>
-                            </div>
-                        </a>
-                        <a href="#" data-id="5">
-                            <div class="menu-inner-right">
-                                <p>Brazilian Creative Club</p>
-                                <p>End of the World</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div id="nav-top-right-close" class="nav-top-right">
-                <div class="nav-top-right-bg"></div>
-                <div id="nav-top-right-close-inner"></div>
-            </div>
-        </div>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
         <script src="index.js"></script>
     </body>
 </html>

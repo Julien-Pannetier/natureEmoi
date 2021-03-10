@@ -1,243 +1,245 @@
-@import '../assets/fonts/acumin/stylesheet.css';
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
 
-body {
-	background: #05448e;
-	overflow: hidden;
+$main-color: #ADD981;
+$white: #fff;
+$white-transparent : #FFFFFFDF;
+$black: black;
+
+* {
+	font-family: "montserrat", sans-serif;
 }
 
-a, body, button, div, img, input, p, select, textarea {
-    box-sizing: border-box;
+body {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 a {
-	color: inherit;
-	text-decoration: inherit;
+	text-decoration: none;
+	color: $white;
 }
 
 p {
-	font-family: "Acumin Pro", sans-serif;
-	font-style: normal;
-	font-stretch: normal;
+	font-size: 1em;
+	color: $white;
+}
+
+h1 {
+	font-family: "abril fatface", sans-serif;
+	font-size: 5em;
+	font-weight: 100;
+	color: $white;
+}
+
+h2 {
+	font-family: "abril fatface", sans-serif;
+	font-size: 3em;
+	font-weight: 100;
+	color: $black;
+	margin-bottom: 5px;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-weight: 600;
+	color: $black;
+	margin-bottom: 10px;
+}
+
+#container {
+	width: 80%;
+	margin: auto;
+}
+
+/* Boutons */
+.button {
+	font-size: 1.0em;
+	color: $white;
+	background-color: $main-color;	
+	border: none;
+	border-radius: 20px;
+	padding: 10px 15px;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* Section */
+.section {
+	margin-bottom: 150px;
+}
+
+/* Séparation */
+.section-separator {
+	width: 40px;
+	height: 8px;
+	background-color: $main-color;
+	margin-bottom: 40px;
+}
+
+/* ==========================================================================
+Header
+========================================================================== */
+#home {
+	position: relative;
+	&-bg {
+		width: 100%;
+		height: 100%;
+		background-size: contain;
+	}
+	&-title {
+		position: absolute;
+		width: 50%;
+		top: 25%;
+		left: 10%;
+	}
+	&-scroll {
+		position: absolute;
+		width: 5%;
+		bottom: 10%;
+		left: 10%;
+		cursor: pointer;
+	}
+}
+
+/* Navigation principale */
+.navbar {
+	position : absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 120px;
+	display: flex;
+	align-items: center;
+	&-logo {
+		margin-left: 40px;
+		img {
+			width: 150px;
+			height: auto;
+		}
+	}
+	&-nav {
+		display: flex;
+		justify-content: space-between;
+		width: 400px;
+		list-style: none;
+	}
+	&-link {
+		color: $white;
+		font-size: 1em;
+		text-decoration: none;
+	}
+}
+
+/* ==========================================================================
+Section Services
+========================================================================== */
+.services {
+	display: flex;
+	justify-content: space-around;
+	&-block {
+		width: 220px;
+		text-align: center;
+		margin: 100px 0;
+	}
+	&-icon {
+		color: $main-color;
+	}
+	&-text {
+		font-size: 1.2em;
+		font-weight: 600;
+		color: $black;
+	}
+}
+
+/* ==========================================================================
+Section Nos meilleures ventes
+========================================================================== */
+.bestSales-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.no-grid {
+	flex: 1;
+	min-width: 300px;
 	margin: 0;
 }
 
-#nav-top-right-open {
-	margin-right: 17px;
-	&:hover .nav-top-right-bg {
-		background-color: #f1f1f1;
-		width: 120%;
-		height: 120%;
-	}
-}
-
-.nav-top-right {
-	position: absolute;
-	top: 32px;
-	right: 32px;
-	width: 59px;
-	height: 59px;
-	pointer-events: auto;
-	cursor: pointer;
-	&-bg {
-		position: absolute;
-		top: 50%;
-		left: 50%;
+figure {
+	position: relative;
+	margin: 10px;
+	img {
 		width: 100%;
 		height: 100%;
-		border-radius: 50%;
-		background-color: #fff;
-		transform: translate(-50%, -50%);
-		transition: background-color .3s, width .2s, height .2s;
-	}
-	&-inner {
-		position: absolute;
-		top: 26px;
-		left: 16px;
-		width: 19px;
-		height: 15px;
-		border: 2px solid #232323;
-		&:nth-child(2) {
-			transform: translateX(4px) translateY(-4px);
-			border-left: none;
-			border-bottom: none;
-		}
-		&:nth-child(3) {
-			transform: translateX(8px) translateY(-8px);
-			border-left: none;
-			border-bottom: none;
-		}
 	}
 }
 
-.menu-open {
-	#menu {
-		visibility: visible;
-		transition: visibility 0s;
-		&-bg {
-			opacity: 1;
-			transition: opacity 0s .6s, background-color .5s;
-		}
-		&-inner {
-			opacity: 1;
-			transition: opacity .3s;
-			&-left {
-				visibility: visible;
-				&::after {
-					width: 0%;
-					transition: width .3s 1.4s;
-				}
-			}
-			&-right {
-				&-header {
-					opacity: 1;
-					transform: translateY(0px);
-					transition: opacity .6s .7s;
-				}
-			}	
-		}
-	}
-	.menu-inner-right {
-		opacity: 1;
-		transform: translateY(0px);
-		transition: opacity .6s .7s, transform .6s .7s;
-		transition-delay: 0.7s, 0.7s;
-	}
-	#nav-top-right-open .nav-top-right-bg {
-		background-color: #F1F1F1 !important;
-		width: 3456px;
-		height: 3456px;
-		transition: width .7s, height .7s, background-color .3s .1s;
-		transition-timing-function: ease, ease, ease;
-		transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
-	}
-	#nav-top-right-close {
-		opacity: 1;
-		transition: opacity .3s .4s;
-	}
-}
-
-#menu {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	overflow-x: hidden;
-	overflow-y: scroll;
-	z-index: 2;
-	visibility: hidden;
-	transition: visibility 0s .7s;
-	&-bg {
-		position: fixed;
-		top: 0px;
-		right: 0px;
-		bottom: 0px;
-		left: 0px;
-		overflow: hidden;
-		pointer-events: none;
-		background-color: #F1F1F1;
-		opacity: 0;
-		transition: opacity .5s .2s;
-	}
-	&-inner {
-		position: relative;
-		height: 100%;
-		min-height: 800px;
-		opacity: 0;
-		transition: opacity .3s;
-		&-left {
-			position: fixed;
-			width: calc(70px + ((100% - 70px) / 2));
-			height: 100%;
-			visibility: hidden;
-			transition: visibility 0s .7s;
-			background-color: #000;
-			&::after {
-				content: '';
-				position: absolute;
-				z-index: 4;
-				top: 0px;
-				left: 0px;
-				width: 100%;
-				height: 100%;
-				background-color: #F1F1F1;
-				transition: width 0s .7s;
-			}
-		}
-		&-right {
-			float: right;
-			width: calc(((100% - 70px) / 2));
-			min-height: 100%;
-			&-header {
-				margin-top: 53px;
-				margin-left: calc((100% / 6) * .5);			
-				padding-left: 14px;
-				opacity: 0;
-				font-weight: 300;
-				transition: opacity 0s .65s;
-			}
-			&-container {
-				display: table;
-				margin-top: 55px;
-				margin-bottom: 60px;
-				margin-left: calc((100% / 6) * .5);
-			}
-		}
-	}
-}
-
-.menu-inner-left-img {
+figcaption {
 	position: absolute;
-	top: 0px;
-	right: 0px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: $white-transparent;
 	bottom: 0;
-	left: 0px;
-	background-size: cover;
-	background-position: center;
-	opacity: 0;
-	transition: opacity .4s;
+	width: 100%;
+	p {
+		color: $main-color;
+		font-weight: 800;
+	}
 }
 
-.menu-inner-right {
-	padding: 18px 14px;
-	margin-bottom: 20px;
-	cursor: pointer;
-	opacity: 0;
-	transform: translateY(60px);
-	transition: opacity 0s .7s, transform 0s .7s;
-	&:hover {
-		color: #BBB;
+/* ==========================================================================
+Section Nos plantes
+========================================================================== */
+.plants-grid {
+	display: grid;
+	min-height: 150vh;
+	grid-template-columns: repeat(4, 1Fr);
+	grid-template-rows: repeat(4, 400px);
+	&-1 {
+		grid-column: 1 / 3;
+		grid-row: 1 / 3;
+	}
+	&-2 {
+		grid-column: 3 / 5;
+	}
+	&-3 {
+		grid-column: 3 / 5;
+	}
+	&-4 {
+		grid-column: 1;
+		grid-row: 3 / 5;
+	}
+	&-5 {
+		grid-column: 2 / 4;
+		grid-row: 3 / 5;
+	}
+	&-6 {
+		grid-column: 4;
+		grid-row: 3 / 5;
+	}
+}
+
+/* ==========================================================================
+Footer
+========================================================================== */
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	p, a {
+		color: $black;
+		font-weight: 600;
+		margin-bottom: 50px;
 	}
 	p {
-		font-weight: 200;
-		transition: color .3s;
-		&:first-child {
-			margin-bottom: 5px;
-			font-size: 50px;
-		}
-	}
-}
-
-#nav-top-right-close {
-	opacity: 0;
-	transition: opacity .3s;
-	&:not(:hover) .nav-top-right-bg {
-    	background-color: #fbfbfb;
-	}
-}
-
-#nav-top-right-close-inner {
-	&:after, &:before {
-		content: '';
-		position: absolute;
-		top: 28px;
-		left: 18px;
-		width: 23px;
-		height: 2px;
-		background-color: #000;
-		transform: rotate(-45deg);
-	}
-	&:before {
-		transform: rotate(45deg);
+		margin-top: 0;
 	}
 }
