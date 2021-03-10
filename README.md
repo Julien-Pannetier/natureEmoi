@@ -1,18 +1,22 @@
-Webapp Starter Kit
+# Challenge Assets
 
-Using parceljs
+Police d'écriture par défaut "Montserrat"
+https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap
 
-Requisits
+Police d'écriture pour le titre "Abril Fatface"
+https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap
 
-    Install nodejs
-    Git git
+Couleurs utilisées :
 
-Preparation
+blanc : #fff
+blanc transparent : #FFFFFFDF
+vert clair : #ADD981
 
-    clone this repo by running git clone https://github.com/Julien-Pannetier/starter-kit.git 'your-project' in your command line
-    open the folder cd 'your-project'
-    then run npm install
+Flaticon utilisées : 
 
-Commands
+icone scroll vers le bas : `fas fa-angle-down`
+icone de magasin : `fas fa-store`
+icone du retrait sans contact : `fas fa-people-carry`
+icone de la livraison : `fas fa-truck`
 
-    npm run start - start your dev environment
+Lien d'integration flaticon : https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js
